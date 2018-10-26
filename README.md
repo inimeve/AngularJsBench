@@ -1,1 +1,1 @@
-AngularJsBench
+AngularJsWithWebpack
