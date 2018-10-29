@@ -1,17 +1,13 @@
-import { StateService } from "@uirouter/core";
+import { AppUtils } from "../../app.utils";
 
 
 export class HomeController {
 
     static NAME = 'HomeController';
 
-    private static $inject: string[] = ['$state', 'randomNames'];
+    private static $inject: string[] = ['appUtils'];
 
     
-    constructor(private $state: StateService, private randomNames: any) {}
-
-    public helloWorld = (): void => {
-        console.log('HELLO WORLD!!');
-    };
+    constructor(private appUtils: AppUtils) {}
 
 }

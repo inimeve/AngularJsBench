@@ -1,6 +1,9 @@
 import uirouter, { UrlService } from "@uirouter/angularjs";
 import { MinimalButtonModule } from "minimal-button";
+
 import { HomeModule } from "../features/home/home.module";
+import { TableModule } from "../features/table/table.module";
+import { AppUtilsService } from "../app.utils";
 
 export class AppConfig {
 
@@ -23,10 +26,15 @@ export class AppConfig {
         ];
         
         let featureModules: string[] = [
-            HomeModule
+            HomeModule,
+            TableModule
+        ];
+        
+        let globalServices: string[] = [
+            AppUtilsService
         ];
     
-        return coreModules.concat(externalComponentModules).concat(featureModules);
+        return coreModules.concat(externalComponentModules).concat(featureModules).concat(globalServices);
     }
 
 }

@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@uirouter/angularjs": "^1.0.20",
+    "ag-grid-community": "^19.0.0",
     "angular": "~1.7.5",
     "bootstrap": "~3.3.0",
     "minimal-button": "0.0.x"

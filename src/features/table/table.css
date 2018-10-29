@@ -1,0 +1,9 @@
+.window-container {
+    height: 100vh;
+    padding: 5px;
+}
+
+.table-container {
+    min-height: 400px;
+    max-height: 1000px;
+}
