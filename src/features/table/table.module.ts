@@ -1,11 +1,8 @@
 import angular = require("angular");
-import {Grid} from 'ag-grid-community';
 import { initialiseAgGridWithAngular1 } from "ag-grid-community";
 
-import "ag-grid-community/dist/styles/ag-grid.css";
-import "ag-grid-community/dist/styles/ag-theme-balham.css";
-
-import "./table.css";
+import "./ag-my-theme.scss";
+import "./table.scss";
 
 import { TableConfig } from "./table.config";
 import { TableComponent } from "./table.component";
