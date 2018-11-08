@@ -3,6 +3,7 @@ import { MinimalButtonModule } from "minimal-button";
 
 import { HomeModule } from "../features/home/home.module";
 import { TableModule } from "../features/table/table.module";
+import { TreeModule } from "../features/tree/tree.module";
 import { AppUtilsService } from "../app.utils";
 
 export class AppConfig {
@@ -18,7 +19,8 @@ export class AppConfig {
 
     public static resolveModules(): string[] {
         let coreModules: string[] = [
-            uirouter
+            uirouter,
+            'agGrid'
         ];
         
         let externalComponentModules: string[] = [
@@ -27,7 +29,8 @@ export class AppConfig {
         
         let featureModules: string[] = [
             HomeModule,
-            TableModule
+            TableModule,
+            TreeModule
         ];
         
         let globalServices: string[] = [

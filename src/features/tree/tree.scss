@@ -1,0 +1,9 @@
+.table-container {
+    padding: 5px;
+}
+
+.without-vertical-scroll {
+    & .ag-body-container {
+        margin-bottom: 1px;
+    }
+}
