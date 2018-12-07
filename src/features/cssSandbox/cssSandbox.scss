@@ -8,6 +8,7 @@
 
 .box-row {
     background-color: red;
+    min-height: 500px;
     height: 500px;
     display: flex;
     flex-flow: wrap;
@@ -18,17 +19,19 @@
     flex-grow : 1;
     display: flex;
     flex-flow: wrap;
+    overflow: hidden;
 }
 
 .box-column {
     flex-grow: 1;
     background-color: green;
+    /* min-width: 0; */
     overflow: auto;
 }
 
 .box {
     width: 50px;
-    height: 1550px;
+    height: 500px;
     background-image: linear-gradient(purple, orange);
 }
 
@@ -58,4 +61,13 @@
 
 .give-some-margin {
     margin: 10px;
+}
+
+body, form {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
 }
