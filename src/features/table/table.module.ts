@@ -1,5 +1,4 @@
 import angular = require("angular");
-import { initialiseAgGridWithAngular1 } from "ag-grid-community";
 
 import "./ag-my-theme.scss";
 import "./table.scss";

@@ -5,7 +5,7 @@ import "./tree.scss";
 import { TreeConfig } from "./tree.config";
 import { TreeComponent } from "./tree.component";
 
-const MODULE_NAME: string = "tableModule";
+const MODULE_NAME: string = "treeModule";
 
 const MODULE_DEPENDENCIES: string[] = [];
 

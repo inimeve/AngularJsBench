@@ -1,11 +1,35 @@
 
 <div class="home-index-container">
-    <minimal-button
-        id="myButton"
-        css-class="minimal-btn--success rounded filled"
-        on-click="$ctrl.appUtils.goToTable('table')">
-        Tabla
-    </minimal-button>
-    <a ui-sref="table">Go to Table</a>
+    <div>
+        <minimal-button
+            id="gotoTableBtn"
+            css-class="minimal-btn--success rounded filled"
+            on-click="$ctrl.appUtils.goToWindow('table')">
+            Tabla
+        </minimal-button>
+        <a ui-sref="table">Go to Table</a>
+    </div>
+
+    <br>
+
+    <div>
+        <minimal-button
+            id="gotoTreeBtn"
+            css-class="minimal-btn--warning"
+            on-click="$ctrl.appUtils.goToWindow('tree')">
+            Arbol
+        </minimal-button>
+    </div>
+
+    <br>
+
+    <div>
+        <minimal-button
+            id="gotoCssSandboxBtn"
+            css-class="minimal-btn--primary rounded"
+            ui-sref="cssSandbox">
+            CssSandbox
+        </minimal-button>
+    </div>
 </div>
 

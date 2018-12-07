@@ -9,7 +9,7 @@ export class AppUtils {
 
     constructor(private $state: StateService) {}
 
-    public goToTable = (stateName: string):void => {
+    public goToWindow = (stateName: string):void => {
         this.$state.go(stateName, {});
     };
 
