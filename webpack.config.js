@@ -80,6 +80,7 @@ module.exports = {
   devtool: 'eval',
 
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
+    publicPath: '/app/'
   }
 };
