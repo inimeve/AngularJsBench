@@ -1,73 +1,15 @@
-.box-container {
-    background-color: crimson;
-    flex: 1;
-    display: flex;
-    flex-flow: column;
+.external {
+  width: 500px;
+  height: 500px;
+  background: red;
+
+  overflow: hidden;
 }
 
+.inner {
+  width: 400px;
+  height: 600px;
+  background: blue;
 
-.box-row {
-    background-color: red;
-    min-height: 500px;
-    height: 500px;
-    display: flex;
-    flex-flow: wrap;
-}
-
-.flex-box-row {
-    background-color: blue;
-    flex-grow : 1;
-    display: flex;
-    flex-flow: wrap;
-    overflow: hidden;
-}
-
-.box-column {
-    flex-grow: 1;
-    background-color: green;
-    /* min-width: 0; */
-    overflow: auto;
-}
-
-.box {
-    width: 50px;
-    height: 500px;
-    background-image: linear-gradient(purple, orange);
-}
-
-
-
-.body {
-    height: 100vh;
-    display: flex;
-    flex-flow: column;
-}
-
-.header {
-    background-color: pink;
-    height: 80px;
-}
-
-.sidebar {
-    width: 80px;
-    background-color: aquamarine;
-}
-
-.content {
-    display: flex;
-    flex-flow: wrap;
-    flex: 1;
-}
-
-.give-some-margin {
-    margin: 10px;
-}
-
-body, form {
-    margin: 0;
-    padding: 0;
-}
-
-html{
-    font-size: 16px;
+  position: absolute;
 }
